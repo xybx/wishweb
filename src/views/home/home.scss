@@ -1,0 +1,119 @@
+.header {
+    height: 240px;
+    background-color: #fff;
+    display: grid;
+    place-items: center;
+    img {
+        width: 270px;
+    }
+}
+
+.title {
+    height: 597px;
+    background-color: antiquewhite;
+    background: url('../../assets/images/main_bg.png') no-repeat center;
+    background-size: contain;
+    position: relative;
+}
+.title-text {
+    position: absolute;
+    top: 320px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    cursor: default;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+@keyframes glow {
+    from {
+        text-shadow:
+            0 0 2px rgba(255, 255, 255, 0.5),
+            0 0 4px rgba(255, 255, 255, 0.3);
+    }
+
+    to {
+        text-shadow:
+            0 0 4px rgba(255, 255, 255, 0.7),
+            0 0 8px rgba(255, 255, 255, 0.5),
+            0 0 12px rgba(255, 255, 255, 0.3);
+    }
+}
+
+.desc-title {
+    margin: 70px 0;
+    text-align: center;
+    color: #333;
+    cursor: default;
+    > div {
+        &:first-of-type {
+            font-size: 36px;
+            letter-spacing: 4px;
+        }
+        &:last-of-type {
+            color: #92959c;
+            font-size: 18px;
+        }
+    }
+}
+.desc-cont {
+    display: flex;
+    .desc-item {
+        flex: 1;
+        cursor: default;
+        // height: 660px;
+        background: #e8ebf3;
+        border-radius: 20px 20px 0 0;
+        margin: 0 10px;
+        text-align: center;
+    }
+    .desc-item-text {
+        margin: 25px 0;
+        > div {
+            &:first-of-type {
+                font-size: 24px;
+                letter-spacing: 4px;
+                color: #4b4e59;
+                margin-bottom: 10px;
+            }
+            &:last-of-type {
+                color: #92959c;
+                font-size: 18px;
+            }
+        }
+    }
+    .desc-item-img {
+        margin: 0 38px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.footer {
+    height: 128px;
+    background-color: #333;
+    display: grid;
+    place-items: center;
+}
+
+.footer-text {
+    text-align: center;
+    color: #fff;
+    cursor: default;
+    font-size: 14px;
+    display: flex;
+    p {
+        margin: 0 5px;
+        color: rgba(255, 255, 255, 0.7);
+    }
+}
+
+.ba-box {
+    cursor: pointer;
+    box-sizing: border-box;
+    &:hover {
+        color: #fff;
+    }
+}
